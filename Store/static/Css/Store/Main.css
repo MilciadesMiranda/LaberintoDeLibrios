@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.ContMain{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template:  "Section_Header" min-content
+                    "Section_Main" 1fr / 1fr;
+    overflow: hidden;
+    position: relative;
+}
+
+/*SECTION HEADER*/
+.Section_Header{
+    grid-area: Section_Header;
+    background-color: #BF4B4B;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.Logo{
+    width: min-content;
+    height: min-content;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    place-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+.Logo h1{
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.NavOptions{
+    display: flex;
+    gap: 10px;
+}
+
+.NavOptions a{
+    padding: 5px 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.NavOptions a:hover{
+    background-color:#D9BBA9;
+    border-radius: 50px;
+    color: #000000;
+    box-shadow: 0 2px 4px 2px #00000033;
+}
+
+/*SECTION MAIN*/
+.Section_Main{
+    grid-area: Section_Main;
+    display: grid;
+    background-color: #ffffff;
+    place-items: center;
+    overflow: hidden;
+}
+
+/*MODAL*/
+.ModalProduct{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #BF4B4B80;
+}

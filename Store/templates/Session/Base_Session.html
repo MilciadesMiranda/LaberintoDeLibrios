@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto de Libros</title>
+    <link rel="stylesheet" href="{% static 'Css/Session/Main.css' %}">
+    <link rel="icon" href="{% static 'Img/Logo.ico' %}">
+</head>
+
+<body>
+
+    <div class="ContMain">
+        <div class="ContForm">
+            <img src="{% static 'Img/Logo.jpg' %}" alt="logo">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <script type="module" src="{% static 'Js/Session/Main.js' %}"></script>
+</body>
+
+</html>

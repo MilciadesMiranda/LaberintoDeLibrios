@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto de Libros</title>
+    <link rel="stylesheet" href="{% static 'Css/Store/Main.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/Store/Products.css' %}">
+    <link rel="icon" href="{% static 'Img/Logo.ico' %}">
+</head>
+
+<body>
+    
+    <div class="ContMain" id="ContMain">
+
+        <section class="Section_Header">
+            <a href="/" class="Logo">
+                <img src="{% static 'Img/Logo.jpg' %}" alt="logo">
+                <h1>Laberinto de Libros</h1>
+            </a>
+
+            <div class="NavOptions">
+                <a href="/products/">Productos</a>
+                <a href="/logout/">Salir</a>
+            </div>
+        </section>
+        
+        <section class="Section_Main">
+            {% block content %}
+            
+            {% endblock %}
+        </section>
+
+    </div>
+    
+
+    <script type="module" src="{% static 'Js/Store/Main.js' %}"></script>
+
+</body>
+
+</html>
