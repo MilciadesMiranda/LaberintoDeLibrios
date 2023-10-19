@@ -1,0 +1,20 @@
+{% extends 'Manage_Store/Base_Manage_Store.html' %}
+
+{% block content %}
+<div class="Cont_Products">
+
+    <section class="Section_FormProducts">
+        <comp-formprductos></comp-formprductos>
+    </section>
+
+    <section class="Section_Filter_Products">
+        <label>Categorias:</label>
+        <select class="Select_Categories" id="Select_Categories">
+            <option value="false">Vacío</option>
+        </select>
+    </section>
+
+    <section class="Section_ListProducts" id="Section_ListProducts"></section>
+    
+</div>
+{% endblock %}

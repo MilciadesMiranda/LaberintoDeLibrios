@@ -1,0 +1,24 @@
+{% extends 'Session/Base_Session.html' %}
+
+{% block content %}
+
+<h1>Administrador</h1>
+{% if error_message %}
+    <div class="ContMessage">
+        {{ error_message }}
+    </div>
+{% endif %}
+<form method="POST" accept="/managestore/logout" class="Formulario">
+    {% csrf_token %}
+    <label >Usuario o Correo:</label>
+    <input type="text" placeholder="Usuario o Correo" name="nameemail" >
+    <label>Contraseña:</label>
+    <input type="password" placeholder="Contraseña" name="pass">
+    <button type="submit">Iniciar Sesión</button>
+</form>
+
+<!-- <div class="Otras_Opciones">
+    <a href="/managestore/register/">Registrarse</a>
+</div> -->
+
+{% endblock %}

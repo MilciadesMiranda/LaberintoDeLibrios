@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.Cont_Categorias{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template: "Section_FormCat Section_ListCat" 1fr / 
+                    300px               1fr;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/*SECTION DEL INGRESO DE CATEGORIAS*/
+.Section_FormCat{
+    grid-area: Section_FormCat;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+}
+
+/*SECTION CARGAR TARJETAS*/
+.Section_ListCat{
+    grid-area: Section_ListCat;
+    background-color: #0000001a;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;   
+}
+
+.Section_ListCat::-webkit-scrollbar {
+    width: 8px;
+    height: 12px;
+}
+.Section_ListCat::-webkit-scrollbar-thumb {
+    background: #D99962;
+    border-radius: 5px;
+}
+.Section_ListCat::-webkit-scrollbar-thumb:hover {
+    background: #e9ba95;
+
+}
+.Section_ListCat::-webkit-scrollbar-corner {
+    display: none;
+
+}
