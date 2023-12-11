@@ -19,7 +19,7 @@
 /*SECTION HEADER*/
 .Section_Header{
     grid-area: Section_Header;
-    background-color: #BF4B4B;
+    background-color: #7C96AB;
     overflow: hidden;
     display: grid;
     grid-auto-flow: column;
@@ -54,18 +54,18 @@
 
 .NavOptions{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .NavOptions a{
-    padding: 5px 10px;
+    padding: 10px;
     font-family: Arial;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
 }
 .NavOptions a:hover{
-    background-color:#D9BBA9;
+    background-color:#bdc9d4;
     border-radius: 50px;
     color: #000000;
     box-shadow: 0 2px 4px 2px #00000033;

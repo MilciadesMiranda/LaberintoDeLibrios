@@ -30,7 +30,7 @@ class FormCategoria extends HTMLElement {
                 height: min-content;
                 display: grid;
                 overflow: hidden;
-                background-color: #45593F;
+                background-color: #617B8F;
                 padding: 10px;
                 gap: 20px;
             }

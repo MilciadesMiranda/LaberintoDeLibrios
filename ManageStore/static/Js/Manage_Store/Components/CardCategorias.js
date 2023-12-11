@@ -34,7 +34,7 @@ class CardCategorias extends HTMLElement {
 
             .ContMain{
                 
-                background-color: #45593F;
+                background-color: #617B8F;
                 height: min-content;
                 display: grid;
                 grid-template:  "ContTitle ContBtns" 40px
@@ -64,7 +64,7 @@ class CardCategorias extends HTMLElement {
                 width: 35px;
                 height: 35px;
                 display: grid;
-                background-color: #45593F;
+                background-color: #FFBB5C;
                 cursor: pointer;
                 outline: none;
                 border: 0;
@@ -72,7 +72,7 @@ class CardCategorias extends HTMLElement {
                 place-items: center;
             }
             .ContBtns button:hover{
-                background-color: #61735c;
+                background-color: #ffc678;
             }
             .ContBtns button:active{
                 transform: scale(0.9);
@@ -84,7 +84,7 @@ class CardCategorias extends HTMLElement {
 
             .ContInputs{
                 grid-area: ContInputs;
-                background-color: #61735c;
+                background-color: #94A5B3;
                 display: none;
                 grid-template:  "SectName" min-content
                                 "SectDesc" min-content
