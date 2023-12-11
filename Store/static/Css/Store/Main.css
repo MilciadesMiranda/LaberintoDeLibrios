@@ -19,7 +19,7 @@
 /*SECTION HEADER*/
 .Section_Header{
     grid-area: Section_Header;
-    background-color: #BF4B4B;
+    background-color: #7C96AB;
     overflow: hidden;
     display: grid;
     grid-auto-flow: column;
@@ -63,12 +63,24 @@
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .NavOptions a:hover{
-    background-color:#D9BBA9;
+    background-color:#bdc9d4;
     border-radius: 50px;
     color: #000000;
     box-shadow: 0 2px 4px 2px #00000033;
+}
+
+.NavOptions a svg{
+    width: 20px;
+    height: 20px;
 }
 
 /*SECTION MAIN*/

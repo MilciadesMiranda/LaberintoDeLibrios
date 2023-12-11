@@ -42,7 +42,7 @@ class Modal extends HTMLElement {
             .BtnClose{
                 width: 40px;
                 height: 100%;
-                background-color: #f2c318;
+                background-color: #bee066;
                 padding: 10px;
                 border-radius: 50px;
                 cursor: pointer;
@@ -50,7 +50,7 @@ class Modal extends HTMLElement {
                 border: 0;
             }
             .BtnClose:hover{
-                background-color: #f8cc4e;
+                background-color: #dafc81;
             }
             .BtnClose:active{
                 transform: scale(0.9);
@@ -60,7 +60,7 @@ class Modal extends HTMLElement {
                 grid-area: SectionContent; 
                 display: grid;
                 grid-auto-rows: min-content;
-                background-color: #ffffff;
+                background-color: #e4e8ec;
                 overflow-y: auto;
                 border-radius: 10px;
                 gap: 10px;
@@ -68,8 +68,8 @@ class Modal extends HTMLElement {
             }
             
             .SectionContent::-webkit-scrollbar {
-                width: 10px;
-                height: 12px;
+                width: 16px;
+                height: 16px;
             }
             .SectionContent::-webkit-scrollbar-thumb {
                 background: #D99962;
@@ -105,7 +105,7 @@ class Modal extends HTMLElement {
                 grid-area: ContInfo;
                 display: grid;
                 grid-auto-rows: min-content;
-                background-color: #0000001a;
+                background-color: #aebbc6;
                 border-radius: 10px;
                 padding: 20px;
             }
@@ -146,7 +146,7 @@ class Modal extends HTMLElement {
                 grid-area: CreateReview;
                 display: grid;
                 grid-auto-rows: min-content;
-                background-color: #0000001a;
+                background-color: #aebbc6;
                 padding: 10px;
                 border-radius: 5px;
 
@@ -203,12 +203,10 @@ class Modal extends HTMLElement {
                 width: min-content;
                 height: min-content;
                 display: grid;
-                background-color: #8999E4;
                 margin: 5px 0 0 0;
                 gap: 10px;
                 padding: 10px;
                 border-radius: 5px;
-                box-shadow: 0 2px 4px 2px #00000033;
             }
             .NumRating{
                 width: 50px;
@@ -253,7 +251,7 @@ class Modal extends HTMLElement {
                 cursor: pointer;
                 outline: none;
                 border: 0;
-                background-color: #ff8000;
+                background-color: #BEE066;
                 font-family: Arial;
                 font-size: 1rem;
                 font-weight: bold;
@@ -262,7 +260,7 @@ class Modal extends HTMLElement {
                 padding: 10px 20px;
             }
             .BtnSend:hover{
-                background-color: #ff963e;
+                background-color: #dafc81;
             }
             .BtnSend:active{
                 transform: scale(0.9);
@@ -270,7 +268,7 @@ class Modal extends HTMLElement {
            
             .ListReviews{
                 grid-area: ListReviews;
-                background-color: #0000001a;
+                background-color: #aebbc6;
                 padding: 10px;
                 border-radius: 5px;
             }
@@ -287,8 +285,8 @@ class Modal extends HTMLElement {
                 overflow-y: auto; 
             }
             .ContComments::-webkit-scrollbar {
-                width: 8px;
-                height: 12px;
+                width: 16px;
+                height: 16px;
             }
             .ContComments::-webkit-scrollbar-thumb {
                 background: #D99962;
@@ -311,7 +309,7 @@ class Modal extends HTMLElement {
             <div class="ContMain">
                 <section class="SectionBar">
                     <button class="BtnClose" id="BtnClose">
-                        ${Svg['equis']}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path fill="#000000" d="M301.258,256.01L502.645,54.645c12.501-12.501,12.501-32.769,0-45.269c-12.501-12.501-32.769-12.501-45.269,0l0,0   L256.01,210.762L54.645,9.376c-12.501-12.501-32.769-12.501-45.269,0s-12.501,32.769,0,45.269L210.762,256.01L9.376,457.376   c-12.501,12.501-12.501,32.769,0,45.269s32.769,12.501,45.269,0L256.01,301.258l201.365,201.387   c12.501,12.501,32.769,12.501,45.269,0c12.501-12.501,12.501-32.769,0-45.269L301.258,256.01z"/></g></svg>
                     </button>
                 </section>
                 <section class="SectionContent">

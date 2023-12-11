@@ -56,6 +56,29 @@ def Select_Products_Category(request):
             
     return JsonResponse({'data':array}, status=200)
 
+def Select_Products_Name(request):
+
+    name = request.POST['name']
+    array = []
+
+    for producto in Productos.objects.filter(nombre__startswith=name):
+
+        data = {
+            'id': str(producto.id),
+            'name': producto.nombre,
+            'description': producto.descripcion,
+            'price': producto.precio,
+            'idcategory': producto.categoria.id,
+            'category': producto.categoria.nombre
+        }
+
+        if producto.imagen:
+            with open(producto.imagen.path, 'rb') as image_file:
+                data['img'] = base64.b64encode(image_file.read()).decode('utf-8') 
+            array.append(data)
+            
+    return JsonResponse({'data':array}, status=200)
+
 def Select_Review_Product(data):
     idproduct = data.get('idproduct').strip()
     array = []

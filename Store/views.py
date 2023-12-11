@@ -86,6 +86,8 @@ def Products(request):
                 return Select.Select_All_Products()
             elif request.POST['type'] == 'select_idcategory':
                 return Select.Select_Products_Category(request)
+            elif request.POST['type'] == 'select_name':
+                return Select.Select_Products_Name(request)
             else:
                 return JsonResponse({'process':'Error', 'message': 'El type no es valido'})            
     else:
@@ -123,3 +125,7 @@ def Review(request):
             
     else:
         return redirect("/")
+
+
+
+

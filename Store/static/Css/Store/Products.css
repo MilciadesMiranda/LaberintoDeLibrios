@@ -47,54 +47,140 @@
 /*SECTION DEL FILTRAR PRODUCTOS*/
 .Section_Filter_Products{
     grid-area: Section_Filter_Products;
-    border-radius: 10px;
-    background-color: #45593F;
+    border-radius: 50px;
+    background-color: #617b8f;
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: min-content;
-    place-items: center left;
-    padding: 10px;
+    grid-template: "filtro busqueda compras" 1fr / min-content 1fr min-content;
+    padding: 10px 20px 10px 20px;
     gap: 10px;
     box-shadow: 0 2px 4px 2px #00000033;
 }
-.Section_Filter_Products label{
+.filtro{
+    grid-area: filtro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.filtro label{
     font-family: Arial;
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
     white-space: nowrap;
 }
-.Section_Filter_Products select{
+.filtro select{
     width: 200px;
-    height: 30px;
+    height: 40px;
     cursor: pointer;
     outline: none;
     border: 0;
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 0 10px;
 
     font-family: Arial;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #000000;
 }
+.busqueda{
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.busqueda input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    padding: 20px;
+
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+.busqueda button{
+    width: min-content;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 2px 4px 2px #00000033;
+    gap: 10px;
+
+
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+.busqueda button:active{
+    background-color: #dbdbdb;
+    transform: scale(0.9);
+}
+.busqueda button svg{
+    width: 20px;
+    height: 20px;
+}
+
+.compras{
+    grid-area: compras;
+    overflow: hidden;
+}
+.compras button{
+    width: min-content;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 2px 4px 2px #00000033;
+    gap: 10px;
+
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+.compras button:active{
+    background-color: #dbdbdb;
+    transform: scale(0.9);
+}
+.compras button svg{
+    width: 20px;
+    height: 20px;
+}
+
 
 /*SECTION CARGAR TARJETAS*/
 .Section_ListProducts{
     grid-area: Section_ListProducts;
-    background-color: #0000001a;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
     grid-auto-rows: min-content;
-    gap: 10px;
+    justify-content: center;
+    gap: 50px;
     padding: 10px;
     overflow-y: auto;   
 }
 
 .Section_ListProducts::-webkit-scrollbar {
-    width: 8px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
 }
 .Section_ListProducts::-webkit-scrollbar-thumb {
     background: #D99962;

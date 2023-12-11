@@ -46,6 +46,22 @@ export async function Select_Products_Category(idcategory) {
     return await Consulta.json();
 }
 
+export async function Select_Products_Name(name) {
+
+    const formData = new FormData();
+    formData.append('type', 'select_name');
+    formData.append('name', name);
+
+    let Consulta = await fetch('/products/', {
+        method: 'POST',
+        headers: {
+            'X-CSRFToken': Get_Cookie(),
+        },
+        body: formData,
+    });
+    return await Consulta.json();
+}
+
 export async function Select_Reviews_Product(objeto) {
 
     let Consulta = await fetch('/review/', {
@@ -59,7 +75,4 @@ export async function Select_Reviews_Product(objeto) {
     });
     return await Consulta.json();
 }
-
-
-
 
